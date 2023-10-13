@@ -1,0 +1,4 @@
+dict = {0:'Marolix', 1:'Technology',2:'Solutions', 3:'Pvt', 4:'Lmt'}
+dict1 = {5:'physics', 6:'math', 7:'chemistry'}
+maha = {**dict, **dict1}
+print(maha)
