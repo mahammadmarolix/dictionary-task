@@ -1,4 +1,70 @@
+##1.Write a Python script to add a key to a dictionary.
+Sample_Dictionary = {0: 10, 1: 20}
+Sample_Dictionary[2] = 30
+print(Sample_Dictionary)
+
+##2.Write a Python script to check whether a given key already exists in a dictionary.
+def dic_fun(dictionary,value):
+    return value in dictionary
+Sample_Dictionary = {0:12, 1:34, 3:4}
+print(Sample_Dictionary,1)
+print(Sample_Dictionary, 2)
+
+##3.Write a Python program to iterate over dictionaries using for loops
+maha = {'company' : 'Marolix', 'employe sur name' : 'Naguru', 'full name' : 'mahammad'}
+for key in maha:
+    value = maha[key]
+    print(f'{key}: {value}')
+
+##4.Write a Python script to print a dictionary where the keys are numbers between 1 and 15 (both included) and the values are the square of the keys.
+nag = {}
+for i in range(1, 16):
+    nag[i] = i**2
+print(nag)
+
+##5.Write a Python program to create a dictionary from a string.
+sample_string = 'marolix technology'
+maha = {}
+for char in sample_string:
+    if char.isalpha():
+        char = char.lower()
+        if char in maha:
+            maha[char] += 1
+        else:
+            maha[char] = 1
+print(maha)
+
+##6. Write a Python program to sum all the items in a dictionary.
+dict = {'a':12,'b':33,'c':4,'d':5,'e':6,'f':6,'g':8,'h':9,'i':3,'j':32,'k':45}
+nag = 0
+for value in dict.values():
+    nag += value
+print(nag)
+
+##7.Write a Python program to combine two dictionary by adding values for common keys.
+from collections import Counter
+d1 = {'a': 100, 'b': 200, 'c':300}
+d2 = {'a': 300, 'b': 200, 'd':400}
+dict = Counter(d1) + Counter(d2)
+print(dict)
+
+##8.Write a Python program to access dictionary key's element by index.
+dict1 = {0:'physics', 1:'math', 2:'chemistry'}
+for i in range(len(dict1)):
+    print(dict1[i])
+
+##9.Write a Python program to remove a key from a dictionary.
+dict = {0:'Marolix', 1:'Technology',2:'Solutions', 3:'Pvt', 4:'Lmt'}
+maha = 2
+dict.pop(maha)
+print(dict)
+
+##10.Write a Python script to merge two Python dictionaries
 dict = {0:'Marolix', 1:'Technology',2:'Solutions', 3:'Pvt', 4:'Lmt'}
 dict1 = {5:'physics', 6:'math', 7:'chemistry'}
 maha = {**dict, **dict1}
 print(maha)
+
+
+
+
